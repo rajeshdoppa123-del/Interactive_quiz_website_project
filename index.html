@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Quiz Website | QuizMaster</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        Quiz<span>Master</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li>
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <li>
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+          </li>
+          <li>
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li>
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="btn btn-primary btn-sm ms-lg-3" href="login.html">
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="pill">🚀 SMART QUIZ PLATFORM</span>
+
+          <h1>
+            Challenge your <span>mind.</span><br>
+            Master your knowledge.
+          </h1>
+
+          <p>
+            Play interactive quizzes, earn points, unlock achievements and
+            compete with other learners.
+          </p>
+
+          <a class="btn btn-primary btn-lg me-2" href="quiz.html">
+            Start Quiz →
+          </a>
+
+          <a class="btn btn-outline-light btn-lg" href="dashboard.html">
+            View Dashboard
+          </a>
+
+          <div class="stats">
+            <div>
+              <b>50+</b>
+              <small>Questions</small>
+            </div>
+
+            <div>
+              <b>5</b>
+              <small>Categories</small>
+            </div>
+
+            <div>
+              <b>10K+</b>
+              <small>Players</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <img
+            src="assets/hero.svg"
+            class="hero-img"
+            alt="QuizMaster illustration"
+          >
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="tag">EXPLORE</span>
+        <h2>Popular Categories</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div
+            class="feature-card"
+            onclick="location.href='quiz.html?cat=Technology'"
+          >
+            <div class="emoji">💻</div>
+            <h5>Technology</h5>
+            <p>AI, coding and computers.</p>
+            <span>Start →</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div
+            class="feature-card"
+            onclick="location.href='quiz.html?cat=Science'"
+          >
+            <div class="emoji">🔬</div>
+            <h5>Science</h5>
+            <p>Discover scientific facts.</p>
+            <span>Start →</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div
+            class="feature-card"
+            onclick="location.href='quiz.html?cat=GK'"
+          >
+            <div class="emoji">🌍</div>
+            <h5>General Knowledge</h5>
+            <p>Challenge your awareness.</p>
+            <span>Start →</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div
+            class="feature-card"
+            onclick="location.href='quiz.html?cat=Sports'"
+          >
+            <div class="emoji">🏆</div>
+            <h5>Sports</h5>
+            <p>Games, players and records.</p>
+            <span>Start →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <img
+            src="assets/analytics.svg"
+            class="img-fluid"
+            alt="Quiz analytics illustration"
+          >
+        </div>
+
+        <div class="col-lg-6">
+          <span class="tag">WHY QUIZMASTER?</span>
+          <h2>More than a quiz.</h2>
+
+          <p class="text-muted">
+            Track performance, build streaks, collect badges and review your
+            answers after every attempt.
+          </p>
+
+          <div class="check">✓ Instant feedback</div>
+          <div class="check">✓ Timed challenges</div>
+          <div class="check">✓ Achievement badges</div>
+          <div class="check">✓ Progress analytics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 QuizMaster • Interactive Quiz Website
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
